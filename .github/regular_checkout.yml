@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Reminder
-      run: echo "REMINDER: This runs at midnight every weekday."
+      run: echo "REMINDER: This runs at midnight every day."
