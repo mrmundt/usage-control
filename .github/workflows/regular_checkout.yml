@@ -5,8 +5,8 @@ on:
     - cron: "0 0 * * *"
 
 jobs:
-  name: Regular checkout
-  build:
+  regular-checkout:
+    name: Nightly checkout
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
