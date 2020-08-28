@@ -2,14 +2,12 @@ name: CI
 
 on:
   schedule:
-    - 0 0 * * *
+    - cron: "0 0 * * *"
 
 jobs:
   name: Regular checkout
   build:
-
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
     - name: Reminder
