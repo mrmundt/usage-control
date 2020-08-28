@@ -1,0 +1,16 @@
+name: CI
+
+on:
+  schedule:
+    - 0 0 * * *
+
+jobs:
+  name: Regular checkout
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Reminder
+      run: echo "REMINDER: This runs at midnight every day."
